@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>HTML Performance & SEO Best Practices Demo | Web Optimization Guide</title>
+    <meta name="description" content="Comprehensive demonstration of SEO meta tags, Open Graph tags, lazy-loading images, preload/preconnect optimization, and semantic HTML markup for better web performance.">
+    <meta name="keywords" content="SEO, performance, lazy loading, Open Graph, semantic HTML, web optimization">
+    <meta name="author" content="Charles Livia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/html-performance-seo/">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="HTML Performance & SEO Best Practices Demo">
+    <meta property="og:description" content="Learn web performance optimization techniques including lazy-loading, preload, preconnect, and SEO best practices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/html-performance-seo/">
+    <meta property="og:image" content="https://example.com/images/social-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Web Performance Guide">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HTML Performance & SEO Best Practices Demo">
+    <meta name="twitter:description" content="Learn web performance optimization techniques including lazy-loading, preload, preconnect, and SEO best practices.">
+    <meta name="twitter:image" content="https://example.com/images/social-preview.jpg">
+    <meta name="twitter:site" content="@yourhandle">
+    <meta name="twitter:creator" content="@yourhandle">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect to External Domains (Performance Optimization) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.example.com">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "HTML Performance & SEO Best Practices Demo",
+      "description": "Comprehensive demonstration of SEO meta tags, Open Graph tags, lazy-loading images, and performance optimization techniques.",
+      "url": "https://example.com/html-performance-seo/",
+      "author": {
+        "@type": "Person",
+        "name": "Charles Livia"
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-01-15"
+    }
+    </script>
+</head>
+<body>
+    <!-- Semantic HTML5 Markup -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <h1>HTML Performance & SEO Demo</h1>
+            <ul>
+                <li><a href="#seo">SEO Practices</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#images">Lazy Loading</a></li>
+                <li><a href="#semantic">Semantic HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <h2>Web Performance & SEO Best Practices</h2>
+            <p>A comprehensive demonstration of modern web optimization techniques for better search engine rankings and faster page loads.</p>
+        </section>
+
+        <!-- SEO Section -->
+        <section id="seo" aria-labelledby="seo-heading">
+            <h2 id="seo-heading">SEO Meta Tags Implementation</h2>
+            <article>
+                <h3>What's Included</h3>
+                <ul>
+                    <li><strong>Title Tag:</strong> Descriptive, keyword-rich page title (50-60 characters)</li>
+                    <li><strong>Meta Description:</strong> Compelling summary for search results (150-160 characters)</li>
+                    <li><strong>Meta Keywords:</strong> Relevant keywords for page content</li>
+                    <li><strong>Canonical URL:</strong> Prevents duplicate content issues</li>
+                    <li><strong>Robots Meta Tag:</strong> Controls search engine indexing</li>
+                    <li><strong>Structured Data:</strong> Schema.org JSON-LD for rich snippets</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Open Graph Section -->
+        <section id="social" aria-labelledby="social-heading">
+            <h2 id="social-heading">Open Graph & Social Media Tags</h2>
+            <article>
+                <h3>Social Preview Optimization</h3>
+                <p>This page includes comprehensive Open Graph and Twitter Card tags for beautiful social media previews when shared on:</p>
+                <ul>
+                    <li><strong>Facebook:</strong> Open Graph protocol tags</li>
+                    <li><strong>Twitter:</strong> Twitter Card tags with large image summary</li>
+                    <li><strong>LinkedIn:</strong> Uses Open Graph tags</li>
+                    <li><strong>WhatsApp:</strong> Uses Open Graph tags</li>
+                </ul>
+                <p>When this page is shared, social media platforms will display a rich preview with the title, description, and featured image.</p>
+            </article>
+        </section>
+
+        <!-- Performance Section -->
+        <section id="performance" aria-labelledby="performance-heading">
+            <h2 id="performance-heading">Performance Optimization Techniques</h2>
+            <article>
+                <h3>Resource Loading Strategies</h3>
+                <dl>
+                    <dt>Preconnect</dt>
+                    <dd>Establishes early connections to important third-party origins (e.g., Google Fonts, CDNs) to reduce DNS lookup and connection time.</dd>
+                    
+                    <dt>Preload</dt>
+                    <dd>Tells the browser to download critical resources (CSS, fonts) as soon as possible without blocking the page render.</dd>
+                    
+                    <dt>Lazy Loading</dt>
+                    <dd>Defers loading of non-critical images until they're needed (when scrolling into view), reducing initial page load time.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- Lazy Loading Images Section -->
+        <section id="images" aria-labelledby="images-heading">
+            <h2 id="images-heading">Lazy-Loading Images Demo</h2>
+            <article>
+                <h3>Native Browser Lazy Loading</h3>
+                <p>The images below use the native <code>loading="lazy"</code> attribute, which defers loading until they're near the viewport:</p>
+                
+                <figure>
+                    <img 
+                        src="https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=Hero+Image+-+Loaded+Immediately" 
+                        alt="Hero banner showing main content" 
+                        width="800" 
+                        height="400"
+                        loading="eager">
+                    <figcaption>Above-the-fold image (eager loading)</figcaption>
+                </figure>
+
+                <figure>
+                    <img 
+                        src="https://via.placeholder.com/800x400/7B68EE/FFFFFF?text=Lazy+Loaded+Image+1" 
+                        alt="Demonstration of lazy loading technique number one" 
+                        width="800" 
+                        height="400"
+                        loading="lazy">
+                    <figcaption>Lazy-loaded image 1 - Loads when scrolled into view</figcaption>
+                </figure>
+
+                <figure>
+                    <img 
+                        src="https://via.placeholder.com/800x400/50C878/FFFFFF?text=Lazy+Loaded+Image+2" 
+                        alt="Demonstration of lazy loading technique number two" 
+                        width="800" 
+                        height="400"
+                        loading="lazy">
+                    <figcaption>Lazy-loaded image 2 - Saves bandwidth and improves performance</figcaption>
+                </figure>
+
+                <figure>
+                    <img 
+                        src="https://via.placeholder.com/800x400/FF6347/FFFFFF?text=Lazy+Loaded+Image+3" 
+                        alt="Demonstration of lazy loading technique number three" 
+                        width="800" 
+                        height="400"
+                        loading="lazy">
+                    <figcaption>Lazy-loaded image 3 - Reduces initial page weight</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Semantic HTML Section -->
+        <section id="semantic" aria-labelledby="semantic-heading">
+            <h2 id="semantic-heading">Semantic HTML5 Markup</h2>
+            <article>
+                <h3>Benefits of Semantic Elements</h3>
+                <p>This page uses proper semantic HTML5 elements for better accessibility and SEO:</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - Page header with navigation</li>
+                    <li><code>&lt;nav&gt;</code> - Navigation links with ARIA labels</li>
+                    <li><code>&lt;main&gt;</code> - Main content area</li>
+                    <li><code>&lt;section&gt;</code> - Thematic grouping of content</li>
+                    <li><code>&lt;article&gt;</code> - Self-contained content</li>
+                    <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> - Images with captions</li>
+                    <li><code>&lt;footer&gt;</code> - Page footer</li>
+                    <li>ARIA roles and labels for enhanced accessibility</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Additional Content Section -->
+        <section id="additional" aria-labelledby="additional-heading">
+            <h2 id="additional-heading">Additional Best Practices</h2>
+            <article>
+                <h3>Other Optimizations in This Demo</h3>
+                <ul>
+                    <li><strong>Viewport Meta Tag:</strong> Ensures proper responsive design on mobile devices</li>
+                    <li><strong>Language Attribute:</strong> <code>lang="en"</code> helps screen readers and search engines</li>
+                    <li><strong>Descriptive Alt Text:</strong> All images have meaningful alt attributes for accessibility and SEO</li>
+                    <li><strong>Image Dimensions:</strong> Width and height attributes prevent layout shifts (CLS)</li>
+                    <li><strong>Heading Hierarchy:</strong> Proper H1-H6 structure for content organization</li>
+                    <li><strong>External Links:</strong> Consider adding rel="noopener noreferrer" for security</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <aside role="complementary" aria-labelledby="aside-heading">
+        <h2 id="aside-heading">Performance Metrics to Monitor</h2>
+        <ul>
+            <li>Largest Contentful Paint (LCP) - should be &lt; 2.5s</li>
+            <li>First Input Delay (FID) - should be &lt; 100ms</li>
+            <li>Cumulative Layout Shift (CLS) - should be &lt; 0.1</li>
+            <li>First Contentful Paint (FCP) - should be &lt; 1.8s</li>
+            <li>Time to Interactive (TTI) - should be &lt; 3.8s</li>
+        </ul>
+    </aside>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 HTML Performance & SEO Demo. Created for educational purposes.</p>
+        <p>
+            <a href="#top">Back to top</a> | 
+            <a href="notes.md">Read detailed notes</a>
+        </p>
+    </footer>
+</body>
+</html>
